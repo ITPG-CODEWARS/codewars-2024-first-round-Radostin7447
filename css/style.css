@@ -320,7 +320,6 @@ li {
   background-color: rgba(15, 39, 101, 0.85);
 }
 
-/* Pattern */
 .bg-pattern-1 {
   position: relative;
   z-index: 2;
@@ -411,7 +410,6 @@ li {
   color: #fff;
 }
 
-/* Primary Box */
 .ts-intro .border-left {
   border-left: 2px solid #dee2e6 !important;
 }
@@ -450,7 +448,6 @@ section .title-white {
   color: #fff !important;
 }
 
-/* Section verticle title */
 .section-title-vertical {
   position: relative;
   height: 0;
@@ -480,7 +477,6 @@ section .title-white {
   }
 }
 
-/* Column title */
 .column-title {
   font-size: 28px;
   line-height: 30px;
@@ -497,8 +493,6 @@ section .title-white {
   font-size: 30px;
 }
 
-/* Column title small */
-/* Video responsive */
 .embed-responsive {
   padding-bottom: 56.25%;
   position: relative;
@@ -515,7 +509,6 @@ section .title-white {
   border: 0;
 }
 
-/* Input form */
 .form-control {
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -687,7 +680,6 @@ button:focus {
   margin-right: 15px;
 }
 
-/* box button */
 
 .btn-box {
     background: #1e2227;
@@ -700,7 +692,6 @@ button:focus {
     color: #fff;
 }
 
-/* Ul, Ol */
 .list-round,
 .list-arrow,
 .list-dash {
@@ -734,7 +725,6 @@ ul.list-dash li:before {
   font-size: 10px;
 }
 
-/* Bootstrap */
 .nav-tabs > li.active > a {
   border: 0;
 }
@@ -851,7 +841,6 @@ a[href^=tel] {
   border-bottom: 2px solid #da0f32;
 }
 
-/* Content title */
 .content-title {
   font-size: 44px;
   margin-top: 0;
@@ -902,8 +891,6 @@ a[href^=tel] {
   margin: 10px 0 0;
 }
 
-/* Top Bar
-================================================== */
 .site-top {
   position: absolute;
   top: 0;
@@ -950,7 +937,6 @@ a[href^=tel] {
   color: #da0f32;
 }
 
-/* Top menu */
 ul.top-menu li {
   display: inline-block;
   font-size: 14px;
@@ -983,7 +969,6 @@ ul.top-menu li a:hover {
   color: #fff;
 }
 
-/* Top bar transparent */
 .topbar-transparent {
   color: #fff;
   background: none;
@@ -1003,8 +988,6 @@ ul.top-menu li a:hover {
   line-height: normal;
 }
 
-/* Topbar Taransparent with border */
-/* Topbar highlight */
 .top-bar.highlight {
   background: #0f2765;
   color: #fff;
@@ -1193,7 +1176,6 @@ ul.top-menu li a:hover {
   top: 0;
 }
 
-/* Header 2 */
 .header-standard {
   background: #fff;
   -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
@@ -1338,7 +1320,6 @@ ul.top-menu li a:hover {
   background: #00000033;
 }
 
-/* Header 2 */
 
 .header.nav-down.nav-box {
   height: 145px;
@@ -1647,7 +1628,6 @@ ul.navbar-nav > li > a i {
   border-color: transparent;
 }
 
-/* Dropdown */
 .dropdown-submenu {
   position: relative;
 }
@@ -1798,7 +1778,6 @@ ul.navbar-nav > li > a i {
   }
 }
 
-/*-- Top header btn --*/
 a.top-right-btn.btn.btn-primary {
     padding: 10px 25px;
     border-radius: 3px;
@@ -1806,7 +1785,6 @@ a.top-right-btn.btn.btn-primary {
     font-weight: 700;
 }
 
-/* Button */
 
 .btn-secondary{
     padding: 10px 25px;
@@ -1816,7 +1794,6 @@ a.top-right-btn.btn.btn-primary {
     background-color: #163347 !important;
 }
 
-/* Get a quote */
 .header-get-a-quote .btn-primary {
   padding: 13px 25px;
   border-radius: 3px;
@@ -1839,9 +1816,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   content: no-close-quote;
 }
 
-/* Slider
-================================================== */
-/*-- Main slide --*/
+
 #main-slide .carousel-item {
   color: #fff;
   background-position: 100% 100%;
@@ -1967,7 +1942,6 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   margin-bottom: 20px;
 }
 
-/* Carousel control */
 .carousel-indicators li {
   width: 10px !important;
   height: 10px !important;
@@ -2048,7 +2022,6 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   display: none !important;
 }
 
-/*-- Animation */
 .carousel-inner .carousel-item.active h2,
 .carousel-inner .carousel-item.active h3,
 .carousel-inner .carousel-item.active p {
@@ -2056,7 +2029,6 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   animation: fadeInLeft 1.5s ease-in-out 300ms both;
 }
 
-/*-- Owl slide common --*/
 .owl-carousel.page-slider .owl-nav {
   margin: 0;
 }
@@ -2094,7 +2066,6 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   opacity: 1;
 }
 
-/* Dark bg */
 .owl-theme .owl-dots {
   text-align: center;
   margin-top: 40px;
@@ -2117,7 +2088,6 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   opacity: 1;
 }
 
-/* Owl Page slider */
 .page-slider.owl-carousel.owl-theme .owl-nav [class*=owl-] {
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
@@ -2197,7 +2167,6 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   font-weight: 400;
 }
 
-/* Owl Box slider */
 .box-slider-content {
   top: 50%;
   padding: 0;
@@ -2243,7 +2212,6 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   margin: -20px;
 }
 
-/*-- Slider pages --*/
 #main-slide.slider-pages .item {
   min-height: 340px;
   color: #fff;
@@ -2254,8 +2222,6 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   backface-visibility: hidden;
 }
 
-/* Features
-================================================== */
 .ts-features [class*=col] {
   height: 360px;
   padding: 0;
@@ -2325,7 +2291,6 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   background: rgba(15, 39, 101, 0.85);
 }
 
-/* Feature Icon Left */
 .ts-feature-info.icon-left .feature-icon {
   float: left;
   color: #3261D3;
@@ -2349,7 +2314,6 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   margin: 0 0 5px 0;
 }
 
-/*-- ts-features-row --*/
 
 .feature-light-row {
     margin-top: -15%;
@@ -2360,10 +2324,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 .feature-light-row .text-center {
     padding: 30px;
 }
-/* Ts-Service-Area
-===================================================*/
 
-/* ts-service-box */
 
 .ts-service-box-img {
     float: left;
@@ -2401,10 +2362,6 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
     clear:  both;
     display:  block;
 }
-/*Project
-===========================================*/
-
-/* Project All */
 
 .projects .latest-post .post-cat{
    font-size: 20px;
@@ -2412,7 +2369,6 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
    font-style: normal;
 }
 
-/* Single project */
 
 .single-project #main-slide .carousel-item{
    min-height: 500px;
@@ -2479,7 +2435,6 @@ h5.mb-0 .project-btn{
 }
 
 
-/* Project All */
 
 .projects .latest-post.post-large .post-body {
     position: absolute;
@@ -2502,7 +2457,6 @@ h5.mb-0 .project-btn{
    min-height: auto;
 }
 
-/* Single project */
 
 .single-project #main-slide .carousel-item{
    min-height: 500px;
@@ -2572,10 +2526,6 @@ h5.mb-0 .project-btn span{
     margin-top: 65px;
 }
 
-/* Services
-======================================*/
-
-/* Service All */
 
 .ts-services {
     padding: 80px 0;
@@ -2585,7 +2535,6 @@ h5.mb-0 .project-btn span{
    margin-bottom: 10px;
 }
 
-/* Single Service */
 
 .single-service-img img{
    width: 100%;
@@ -2619,7 +2568,6 @@ h5.mb-0 .project-btn span{
 }
 
 
-/* ts-service-box */
 
 .ts-service-row-box .ts-service-box {
     background:  #fff;
@@ -2687,7 +2635,6 @@ h5.mb-0 .project-btn span{
   margin-top: 25px;
 }
 
-/* Service Single */
 .sidebar .download-btn {
   border: 1px solid #eaeaea;
   padding: 20px 30px;
@@ -2741,7 +2688,6 @@ h5.mb-0 .project-btn span{
   margin-bottom: 0;
 }
 
-/*Service area */
 
 .ts-service-wrapper {
     max-width: 350px;
@@ -2757,7 +2703,6 @@ h5.mb-0 .project-btn span{
    position: relative;
 }
 
-/* testimonial */
 .testimonial-static .quote-item {
   padding: 0;
 }
@@ -2979,7 +2924,6 @@ h5.mb-0 .project-btn span{
   margin-right: 20px;
 }
 
-/* Intro Image Box */
 .intro-image-box {
   position: relative;
   margin: 20px;
@@ -3046,7 +2990,6 @@ h5.mb-0 .project-btn span{
   margin-top: 10px;
 }
 
-/* Call To Action Solid bg */
 .call-to-action h3 {
   margin-bottom: 10px;
 }
@@ -3072,10 +3015,6 @@ h5.mb-0 .project-btn span{
     line-height: 26px;
 }
 
-/* Services
-================================================== */
-
-/*-- Featured Tab --*/
 .featured-tab {
       margin: 0;
     padding: 0;
@@ -3207,8 +3146,6 @@ h5.mb-0 .project-btn span{
   color: #2154ce;
 }
 
-/* Featured Project Slider
-================================================== */
 .ts-featured-projects {
   padding-top: 70px;
 }
@@ -3230,7 +3167,6 @@ h5.mb-0 .project-btn span{
   background: #f7f9fd;
   border-radius: 3px;
   position: relative;
-  /*box-shadow: 0 1px 30px 0 rgba(0,0,0,.05);*/
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -3318,7 +3254,6 @@ h5.mb-0 .project-btn span{
   color: #252a37;
 }
 
-/* Owl Page slider */
 .owl-carousel.featured-cases-slide.owl-theme .owl-nav > div {
   bottom: -40px;
   right: 78px;
@@ -3334,8 +3269,6 @@ h5.mb-0 .project-btn span{
   background: #90a9e7;
 }
 
-/* Team
-================================================== */
 .ts-team-wrapper {
   position: relative;
   overflow: hidden;
@@ -3412,7 +3345,6 @@ h5.mb-0 .project-btn span{
   margin-top: 20px;
 }
 
-/* Hover */
 .ts-team-wrapper:hover .ts-team-content {
   position: absolute;
   top: 50%;
@@ -3468,13 +3400,10 @@ h5.mb-0 .project-btn span{
   font-style: italic;
 }
 
-/* Ts-Team */
 .ts-team-bg {
   background-color: #F8F9FD;
 }
 
-/* Quote area
-================================================== */
 
 .quote_form {
   padding: 80px 0px 80px;
@@ -3546,7 +3475,6 @@ h5.mb-0 .project-btn span{
   font-size: 14px;
 }
 
-/*-- Testimonial --*/
 .testimonial-slide .owl-nav {
   position: absolute;
   right: 40px;
@@ -3638,7 +3566,6 @@ h5.mb-0 .project-btn span{
   box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.06);
 }
 
-/* Testimonial Slide classic */
 .quote-item-area {
   max-width: 600px;
   margin: 0 auto;
@@ -3779,9 +3706,6 @@ img.testimonial-thumb {
   opacity: 1;
 }
 
-/* Clients
-================================================== */
-/*-- Partners carousel --*/
 .owl-carousel.owl-theme.partners .owl-nav {
   margin: 0px;
 }
@@ -3915,7 +3839,6 @@ p.panel-title a.collapsed {
   color: #626c84;
 }
 
-/* Accordion classic */
 .panel-classic .panel-heading {
   padding-left: 15px;
 }
@@ -3933,7 +3856,6 @@ p.panel-title a.collapsed {
    background: none;
 }
 
-/* Clients */
 .clients-logo {
   margin: 0 0 30px;
   border: 1px solid #dadada;
@@ -4057,14 +3979,11 @@ p.panel-title a.collapsed {
   margin-top: 15px;
 }
 
-/* Footer
-================================================== */
 .footer {
   position: relative;
   z-index: 4;
 }
 
-/*-- Footer top --*/
 .footer-top {
   position: absolute;
   top: -60px;
@@ -4132,7 +4051,6 @@ p.panel-title a.collapsed {
   margin-bottom: 30px;
 }
 
-/* Footer about */
 .footer-about {
   padding-right: 40px;
 }
@@ -4145,7 +4063,6 @@ p.panel-title a.collapsed {
     font-size: 18px;
 }
 
-/* Footer social */
 .footer-social {
   margin-top: 0px;
 }
@@ -4308,14 +4225,10 @@ p.panel-title a.collapsed {
   border-radius: 100%;
 }
 
-/* Sub Pages
-================================================== */
-/*-- Title border --*/
 .main-container .border-left {
   margin-bottom: 30px;
 }
 
-/*-- Banner --*/
 .banner-area {
   position: relative;
   min-height: 300px;
@@ -4384,7 +4297,6 @@ p.panel-title a.collapsed {
   color: #fff;
 }
 
-/*-- About us page --*/
 .about-pattern {
     position: relative;
     z-index: 2;
@@ -4445,7 +4357,6 @@ p.panel-title a.collapsed {
   border-radius: 50%;
 }
 
-/* ts progress */
 .ts-skills-area .ts-padding {
   padding-bottom: 50px;
   padding-right: 80px;
@@ -4475,7 +4386,6 @@ p.panel-title a.collapsed {
   margin: 0 0 10px 0;
 }
 
-/* Company Progress */
 
 .percent-area{
    position: relative;
@@ -4504,7 +4414,6 @@ p.panel-title a.collapsed {
     background-position: 0 0;
 }
 
-/* ts feature box */
 .ts-features-light .ts-feature-info i {
   color: #2B5CD1;
 }
@@ -4548,7 +4457,6 @@ p.panel-title a.collapsed {
   margin-top: 10px;
 }
 
-/* FAQ page */
 .panel-heading i {
   background: #da0f32;
   color: #fff;
@@ -4646,7 +4554,6 @@ p.panel-title a.collapsed {
   color: #1f1c1c;
 }
 
-/* Gallery */
 
 .gallery-icon i{
    background: #0052a5;
@@ -4674,8 +4581,6 @@ p.panel-title a.collapsed {
    top: 50%;
 }
 
-/* Pricing table
-================================================== */
 
 .pricing {
   padding-bottom: 80px;
@@ -4870,8 +4775,6 @@ p.panel-title a.collapsed {
   background: #fff;
 }
 
-/* FAQ Page*/
-/* Collapse */
 .card {
   border: none;
 }
@@ -4979,7 +4882,6 @@ h5.mb-0 a.collapsed:before {
   transform: rotate(180deg);
 }
 
-/* Slider pages */
 .page-slider.small-bg .item {
   min-height: 330px;
 }
@@ -4996,7 +4898,6 @@ h5.mb-0 a.collapsed:before {
   font-weight: 900;
 }
 
-/*-- Get a quote page --*/
 .page-quote-form {
   background: #f2f2f2;
   padding: 30px 50px 50px;
@@ -5006,7 +4907,6 @@ h5.mb-0 a.collapsed:before {
   margin-bottom: -190px;
 }
 
-/*-- Pricing table  --*/
 .ts-pricing-box {
   margin: 20px 0;
   padding: 0;
@@ -5064,13 +4964,10 @@ h5.mb-0 a.collapsed:before {
     padding: 0;
 }
 
-/* Pricing featured */
 .ts-pricing-box.ts-pricing-featured .ts-pricing-header {
   background: #ff9700;
 }
 
-/* Contact Us
-================================================== */
 
 .map {
   height: 405px;
@@ -5261,7 +5158,6 @@ label {
   border-top: 0;
 }
 
-/* Post Meta Left */
 .post-meta-left {
   width: 15%;
   margin-top: -20px;
@@ -5272,7 +5168,6 @@ label {
   font-size: 14px;
 }
 
-/* Post content right */
 .post-content-right {
   width: 80%;
   float: right;
@@ -5332,7 +5227,6 @@ label {
   color: #da0f32;
 }
 
-/* Meta date */
 .post-meta-date {
   background: #da0f32;
   color: #fff;
@@ -5349,7 +5243,6 @@ label {
   display: block;
 }
 
-/* Post Quote */
 .post-quote-wrapper {
   position: relative;
   color: #fff;
@@ -5393,7 +5286,6 @@ label {
   color: #fff;
 }
 
-/* Author */
 .post-author {
   position: relative;
 }
