@@ -810,7 +810,6 @@ a[href^=tel] {
   opacity: 1;
 }
 
-/*-- Section title --*/
 .section-title {
   font-size: 40px;
   margin-top: 0;
@@ -868,7 +867,6 @@ a[href^=tel] {
   color: #252a37;
 }
 
-/* Border left */
 .section-title.border-title-left {
   padding-left: 140px;
 }
@@ -1003,7 +1001,6 @@ ul.top-menu li a:hover {
   border-right: 0;
 }
 
-/* Topbar info */
 #top-bar .top-info {
   margin: 0;
   float: left;
@@ -1089,7 +1086,6 @@ ul.top-menu li a:hover {
   background: #0F2765;
 }
 
-/* Sticky Menu Animation*/
 @-webkit-keyframes menusticky {
   0% {
     margin-top: -120px;
@@ -1118,7 +1114,6 @@ ul.top-menu li a:hover {
     opacity: 1;
   }
 }
-/* Header default */
 .header-trans-leftbox.navbar-fixed {
   background: black;
 }
@@ -3788,9 +3783,6 @@ img.testimonial-thumb {
     height: 70px;
 }
 
-/* Content area
-================================================== */
-/* Accordion */
 .accordion-title span {
   color: #333;
   font-weight: 400;
@@ -3897,8 +3889,6 @@ p.panel-title a.collapsed {
   filter: gray;
 }
 
-/* Latest News section
-================================================== */
 .latest-post {
   position: relative;
   padding: 30px 20px 30px 30px;
@@ -4027,7 +4017,6 @@ p.panel-title a.collapsed {
   font-size: 14px;
 }
 
-/*-- Footer main --*/
 .footer-main {
   background: url(../images/footer-bg.png);
   background-size: cover;
@@ -4117,7 +4106,6 @@ p.panel-title a.collapsed {
   background: #3f729b;
 }
 
-/* Links */
 .footer-widget ul.list-dash li {
   width: 50%;
   float: left;
@@ -4132,7 +4120,6 @@ p.panel-title a.collapsed {
   color: #ff0000;
 }
 
-/* Newsletter */
 .newsletter-widget {
   border: 0;
   padding-top: 0;
@@ -4171,7 +4158,6 @@ p.panel-title a.collapsed {
   height: 51px;
 }
 
-/* Copyright */
 .copyright {
   background: #00081d;
   color: #8c93a5;
@@ -4869,7 +4855,6 @@ h5.mb-0 a.collapsed:before {
   border-bottom: none;
 }
 
-/* Quote area */
 .quote-item .quote-text:before {
   content: "\e937";
   font-family: 'iconfont';
@@ -5026,7 +5011,6 @@ label {
   color: #fff;
 }
 
-/* Contact page 2 */
 .contact-box.info-box {
   position: relative;
   z-index: 2;
@@ -5139,9 +5123,6 @@ label {
 }
 
 
-/* News Listing
-================================================== */
-
 .post {
   margin: 0 0 50px;
 }
@@ -5185,7 +5166,6 @@ label {
   color: #da0f32;
 }
 
-/* Post media */
 .post-media.post-video {
   max-width: 100%;
   position: relative;
