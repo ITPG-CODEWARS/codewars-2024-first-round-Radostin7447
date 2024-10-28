@@ -361,23 +361,20 @@
 			getRelated(settings.get('rel'));
 
 			if (!open) {
-				open = active = true; // Prevents the page-change action from queuing up if the visitor holds down the left or right keys.
+				open = active = true; 
 
 				setClass(settings.get('className'));
 
-				// Show colorbox so the sizes can be calculated in older versions of jQuery
 				$box.css({visibility:'hidden', display:'block', opacity:''});
 
 				$loaded = $tag(div, 'LoadedContent', 'width:0; height:0; overflow:hidden; visibility:hidden');
 				$content.css({width:'', height:''}).append($loaded);
 
-				// Cache values needed for size calculations
 				interfaceHeight = $topBorder.height() + $bottomBorder.height() + $content.outerHeight(true) - $content.height();
 				interfaceWidth = $leftBorder.width() + $rightBorder.width() + $content.outerWidth(true) - $content.width();
 				loadedHeight = $loaded.outerHeight(true);
 				loadedWidth = $loaded.outerWidth(true);
 
-				// Opens inital empty Colorbox prior to content being loaded.
 				var initialWidth = setSize(settings.get('initialWidth'), 'x');
 				var initialHeight = setSize(settings.get('initialHeight'), 'y');
 				var maxWidth = settings.get('maxWidth');
@@ -397,8 +394,6 @@
 				$box.focus();
 
 				if (settings.get('trapFocus')) {
-					// Confine focus to the modal
-					// Uses event capturing that is not supported in IE8-
 					if (document.addEventListener) {
 
 						document.addEventListener('focus', trapFocus, true);
@@ -409,7 +404,6 @@
 					}
 				}
 
-				// Return focus on closing
 				if (settings.get('returnFocus')) {
 					$events.one(event_closed, function () {
 						$(settings.el).focus();
@@ -427,22 +421,20 @@
 			if (settings.get('closeButton')) {
 				$close.html(settings.get('close')).appendTo($content);
 			} else {
-				$close.appendTo('<div/>'); // replace with .detach() when dropping jQuery < 1.4
+				$close.appendTo('<div/>'); 
 			}
 
 			load();
 		}
 	}
 
-	// Colorbox's markup needs to be added to the DOM prior to being called
-	// so that the browser will go ahead and load the CSS background images.
 	function appendHTML() {
 		if (!$box) {
 			init = false;
 			$window = $(window);
 			$box = $tag(div).attr({
 				id: colorbox,
-				'class': $.support.opacity === false ? prefix + 'IE' : '', // class for optional IE8 & lower targeted CSS.
+				'class': $.support.opacity === false ? prefix + 'IE' : '', 
 				role: 'dialog',
 				tabindex: '-1'
 			}).hide();
@@ -460,7 +452,7 @@
 
 			$close = $('<button type="button"/>').attr({id:prefix+'Close'});
 
-			$wrap.append( // The 3x3 Grid that makes up Colorbox
+			$wrap.append( 
 				$tag(div).append(
 					$tag(div, "TopLeft"),
 					$topBorder = $tag(div, "TopCenter"),
@@ -487,11 +479,8 @@
 		}
 	}
 
-	// Add Colorbox's event bindings
 	function addBindings() {
 		function clickHandler(e) {
-			// ignore non-left-mouse-clicks and clicks modified with ctrl / command, shift, or alt.
-			// See: http://jacklmoore.com/notes/click-events/
 			if (!(e.which > 1 || e.shiftKey || e.altKey || e.metaKey || e.ctrlKey)) {
 				e.preventDefault();
 				launch(this);
@@ -502,7 +491,6 @@
 			if (!init) {
 				init = true;
 
-				// Anonymous functions here keep the public method from being cached, thereby allowing them to be redefined on the fly.
 				$next.click(function () {
 					publicMethod.next();
 				});
@@ -518,7 +506,6 @@
 					}
 				});
 
-				// Key Bindings
 				$(document).bind('keydown.' + prefix, function (e) {
 					var key = e.keyCode;
 					if (open && settings.get('escKey') && key === 27) {
@@ -537,12 +524,8 @@
 				});
 
 				if ($.isFunction($.fn.on)) {
-					// For jQuery 1.7+
 					$(document).on('click.'+prefix, '.'+boxElement, clickHandler);
 				} else {
-					// For jQuery 1.3.x -> 1.6.x
-					// This code is never reached in jQuery 1.9, so do not contact me about 'live' being removed.
-					// This is not here for jQuery 1.9, it's here for legacy users.
 					$('.'+boxElement).live('click.'+prefix, clickHandler);
 				}
 			}
@@ -551,20 +534,12 @@
 		return false;
 	}
 
-	// Don't do anything if Colorbox already exists.
 	if ($[colorbox]) {
 		return;
 	}
 
-	// Append the HTML when the DOM loads
 	$(appendHTML);
 
-
-	// ****************
-	// PUBLIC FUNCTIONS
-	// Usage format: $.colorbox.close();
-	// Usage from within an iframe: parent.jQuery.colorbox.close();
-	// ****************
 
 	publicMethod = $.fn[colorbox] = $[colorbox] = function (options, callback) {
 		var settings;
@@ -572,12 +547,12 @@
 
 		options = options || {};
 
-		if ($.isFunction($obj)) { // assume a call to $.colorbox
+		if ($.isFunction($obj)) { 
 			$obj = $('<a/>');
 			options.open = true;
 		}
 
-		if (!$obj[0]) { // colorbox being applied to empty collection
+		if (!$obj[0]) { 
 			return $obj;
 		}
 
@@ -615,7 +590,6 @@
 
 		$window.unbind('resize.' + prefix);
 
-		// remove the modal so that it doesn't influence the document width/height
 		$box.css({top: -9e4, left: -9e4});
 
 		scrollTop = $window.scrollTop();
@@ -631,7 +605,6 @@
 			$box.css({position: 'absolute'});
 		}
 
-		// keeps the top and left positions within the browser's viewport.
 		if (settings.get('right') !== false) {
 			left += Math.max($window.width() - settings.w - loadedWidth - interfaceWidth - setSize(settings.get('right'), 'x'), 0);
 		} else if (settings.get('left') !== false) {
@@ -650,9 +623,6 @@
 
 		$box.css({top: offset.top, left: offset.left, visibility:'visible'});
 
-		// this gives the wrapper plenty of breathing room so it's floated contents can move around smoothly,
-		// but it has to be shrank down around the size of div#colorbox when it's done.  If not,
-		// it can invoke an obscure IE bug when using iframes.
 		$wrap[0].style.width = $wrap[0].style.height = "9999px";
 
 		function modalDimensions() {
@@ -662,7 +632,6 @@
 
 		css = {width: settings.w + loadedWidth + interfaceWidth, height: settings.h + loadedHeight + interfaceHeight, top: top, left: left};
 
-		// setting the speed to 0 if the content hasn't changed size or position
 		if (speed) {
 			var tempSpeed = 0;
 			$.each(css, function(i){
@@ -687,12 +656,11 @@
 
 				active = false;
 
-				// shrink the wrapper down to exactly the size of colorbox to avoid a bug in IE's iframe implementation.
 				$wrap[0].style.width = (settings.w + loadedWidth + interfaceWidth) + "px";
 				$wrap[0].style.height = (settings.h + loadedHeight + interfaceHeight) + "px";
 
 				if (settings.get('reposition')) {
-					setTimeout(function () {  // small delay before binding onresize due to an IE8 bug.
+					setTimeout(function () {  
 						$window.bind('resize.' + prefix, publicMethod.position);
 					}, 1);
 				}
@@ -768,14 +736,13 @@
 		}
 
 		$loaded.hide()
-		.appendTo($loadingBay.show())// content has to be appended to the DOM for accurate size calculations.
+		.appendTo($loadingBay.show())
 		.css({width: getWidth(), overflow: settings.get('scrolling') ? 'auto' : 'hidden'})
-		.css({height: getHeight()})// sets the height independently from the width in case the new width influences the value of height.
+		.css({height: getHeight()})
 		.prependTo($content);
 
 		$loadingBay.hide();
 
-		// floating the IMG removes the bottom line-height and fixed a problem where IE miscalculates the width of the parent element as 100% of the document width.
 
 		$(photo).css({'float': 'none'});
 
@@ -790,7 +757,7 @@
 				return;
 			}
 
-			function removeFilter() { // Needed for IE8 in versions of jQuery prior to 1.7.2
+			function removeFilter() { 
 				if ($.support.opacity === false) {
 					$box[0].style.removeAttribute('filter');
 				}
@@ -807,7 +774,7 @@
 			$title.html(settings.get('title')).show();
 			$loaded.show();
 
-			if (total > 1) { // handle grouping
+			if (total > 1) { 
 				if (typeof settings.get('current') === "string") {
 					$current.html(settings.get('current').replace('{current}', index + 1).replace('{total}', total)).show();
 				}
@@ -817,7 +784,6 @@
 
 				slideshow();
 
-				// Preloads images within a rel group
 				if (settings.get('preloading')) {
 					$.each([getIndex(-1), getIndex(1)], function(){
 						var img,
@@ -898,12 +864,9 @@
 				setSize(settings.get('width'), 'x') - loadedWidth - interfaceWidth :
 				settings.get('innerWidth') && setSize(settings.get('innerWidth'), 'x');
 
-		// Sets the minimum dimensions for use in image scaling
 		settings.mw = settings.w;
 		settings.mh = settings.h;
 
-		// Re-evaluate the minimum width and height based on maxWidth and maxHeight values.
-		// If the width or height exceed the maxWidth or maxHeight, use the maximum values instead.
 		if (settings.get('maxWidth')) {
 			settings.mw = setSize(settings.get('maxWidth'), 'x') - loadedWidth - interfaceWidth;
 			settings.mw = settings.w && settings.w < settings.mw ? settings.w : settings.mw;
@@ -921,8 +884,6 @@
 
 		if (settings.get('inline')) {
 			var $target = $(href);
-			// Inserts an empty placeholder where inline content is being pulled from.
-			// An event is bound to put inline content back when Colorbox closes or loads new content.
 			$inline = $('<div>').hide().insertBefore($target);
 
 			$events.one(event_purge, function () {
@@ -931,8 +892,6 @@
 
 			prep($target);
 		} else if (settings.get('iframe')) {
-			// IFrame element won't be added to the DOM until it is ready to be displayed,
-			// to avoid problems with DOM-ready JS that might be trying to run in that iframe.
 			prep(" ");
 		} else if (settings.get('html')) {
 			prep(settings.get('html'));
@@ -952,8 +911,6 @@
 					return;
 				}
 
-				// A small pause because some browsers will occassionaly report a
-				// img.width and img.height of zero immediately after the img.onload fires
 				setTimeout(function(){
 					var percent;
 
@@ -1006,7 +963,6 @@
 		}
 	}
 
-	// Navigates to the next page/image in a set.
 	publicMethod.next = function () {
 		if (!active && $related[1] && (settings.get('loop') || $related[index + 1])) {
 			index = getIndex(1);
@@ -1021,7 +977,6 @@
 		}
 	};
 
-	// Note: to use this within an iframe use the following format: parent.jQuery.colorbox.close();
 	publicMethod.close = function () {
 		if (open && !closing) {
 
@@ -1047,7 +1002,6 @@
 		}
 	};
 
-	// Removes changes Colorbox made to the document, but does not remove the plugin.
 	publicMethod.remove = function () {
 		if (!$box) { return; }
 
@@ -1064,8 +1018,6 @@
 		$(document).unbind('click.'+prefix).unbind('keydown.'+prefix);
 	};
 
-	// A method for fetching the current element Colorbox is referencing.
-	// returns a jQuery object.
 	publicMethod.element = function () {
 		return $(settings.el);
 	};

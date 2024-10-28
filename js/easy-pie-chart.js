@@ -298,13 +298,11 @@
 				};
 			}
 
-			// create renderer
 			this.renderer = new options.renderer(el, options);
 
-			// initial draw
 			this.renderer.draw(currentValue);
 
-			// initial update
+			// initial updat
 			if (el.dataset && el.dataset.percent) {
 				this.update(parseFloat(el.dataset.percent));
 			} else if (el.getAttribute && el.getAttribute('data-percent')) {
@@ -312,11 +310,6 @@
 			}
 		}.bind(this);
 
-		/**
-		 * Update the value of the chart
-		 * @param  {number} newValue Number between 0 and 100
-		 * @return {object}          Instance of the plugin for method chaining
-		 */
 		this.update = function (newValue) {
 			newValue = parseFloat(newValue);
 			if (options.animate.enabled) {
