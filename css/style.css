@@ -5962,130 +5962,130 @@ body {
 }
 
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+padding: 0;
+}
 
-        h1 {
-            text-align: center;
-            margin-top: 20px;
-            color: #bf1d1d;
-        }
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #bf1d1d;
+}
 
-        #map {
-            height: 500px;
-            width: 100%;
-            margin: 20px auto;
-            border-radius: 8px;
-        }
+#map {
+  height: 500px;
+  width: 100%;
+  margin: 20px auto;
+  border-radius: 8px;
+}
 
-        .filter-container {
-            text-align: center;
-            margin: 10px 0;
-        }
+.filter-container {
+  text-align: center;
+  margin: 10px 0;
+}
 
-        .filter-container label {
-            margin: 0 10px;
-            font-weight: bold;
-        }
+.filter-container label {
+  margin: 0 10px;
+  font-weight: bold;
+}
 
-        body {
-          font-family: Arial, sans-serif;
-          background-color: #f4f4f4;
-      }
-      .map-container {
-          max-width: 1000px;
-          margin: 0 auto;
-          padding: 20px;
-          text-align: center;
-      }
-      .main-title {
-          color: #bf1d1d;
-          font-size: 28px;
-          font-weight: bold;
-      }
-      #map {
-          height: 600px;
-          width: 100%;
-          border-radius: 10px;
-          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-          margin-top: 20px;
-      }
-      .info-popup {
-          text-align: left;
-      }
-      .info-popup h3 {
-          margin: 0;
-          color: #333;
-          font-size: 18px;
-          font-weight: bold;
-      }
-      .info-popup p {
-          font-size: 14px;
-          margin: 5px 0;
-      }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+.map-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+.main-title {
+  color: #bf1d1d;
+  font-size: 28px;
+  font-weight: bold;
+}
+#map {
+  height: 600px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+.info-popup {
+  text-align: left;
+}
+.info-popup h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+.info-popup p {
+  font-size: 14px;
+  margin: 5px 0;
+}
 
-      .custom-map-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 20px;
-        padding: 20px;
-        background-color: #f8f9fa;
-        border-radius: 10px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    }
+.custom-map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-    .custom-map-title {
-        color: #bf1d1d;
-        font-size: 28px;
-        margin-bottom: 15px;
-        font-weight: bold;
-        text-align: center;
-    }
+.custom-map-title {
+  color: #bf1d1d;
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+}
 
-    #train-map {
-        width: 90%;
-        height: 600px;
-        border-radius: 10px;
-        margin-top: 10px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    }
+#train-map {
+  width: 90%;
+  height: 600px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-    .map-controls {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 15px;
-        gap: 10px;
-    }
+.map-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
 
-    .map-input, .map-select, .map-btn {
-        padding: 8px;
-        font-size: 16px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-    }
+.map-input, .map-select, .map-btn {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
 
-    .map-btn {
-        background-color: #bf1d1d;
-        color: #fff;
-        cursor: pointer;
-    }
+.map-btn {
+  background-color: #bf1d1d;
+  color: #fff;
+  cursor: pointer;
+}
 
-    .map-btn:hover {
-        background-color: #a61919;
-    }
+.map-btn:hover {
+  background-color: #a61919;
+}
 
-    .info-popup h3 {
-        margin: 0;
-        font-size: 18px;
-        color: #bf1d1d;
-    }
+.info-popup h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #bf1d1d;
+}
 
-    .info-popup p {
-        margin: 4px 0;
-        font-size: 14px;
-    }
+.info-popup p {
+ margin: 4px 0;
+ font-size: 14px;
+}
