@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title> TRAIN GO</title>
+   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/icon-font.css">
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="css/colorbox.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+   
+</head>
+
+<body>
+
+   <div class="body-inner">
+
+      <div class="site-top-2">
+         <header class="header nav-down" id="header-2">
+            <div class="container">
+               <div class="row">
+                  <div class="logo-area clearfix">
+                     <div class="logo col-lg-3 col-md-12">
+                        <a href="index.html">
+                           <img src="images/logo.png" alt="">
+                        </a>
+                     </div>
+                     
+                     <div class="col-lg-9 col-md-12 pull-right">
+                        <ul class="top-info unstyled">
+                           <li><span class="info-icon"><i class="icon icon-phone3"></i></span>
+                              <div class="info-wrapper">
+                                 <p class="info-title">24/7 Време за отговор</p>
+                                 <p class="info-subtitle">+359 XXX XXX XXX </p>
+                              </div>
+                           </li>
+                           <li><span class="info-icon"><i class="icon icon-envelope"></i></span>
+                              <div class="info-wrapper">
+                                 <p class="info-title">Изпратете вашето запитване</p>
+                                 <p class="info-subtitle">support@traingo.bg</p>
+                              </div>
+                           </li>
+                           
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="site-nav-inner site-navigation navigation navdown">
+               <div class="container">
+                  <nav class="navbar navbar-expand-lg ">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span></button>
+                     <div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="index.html">Начало</a></li>                          
+                           <li class="nav-item dropdown"><a class="nav-link" href="#" data-toggle="dropdown">Компания<i class="fa fa-angle-down"></i></a>
+                              <ul class="dropdown-menu" role="menu">
+                                 <li><a href="about.html">За нас </a></li>
+                                 <li><a href="team.html">Нашия екип</a></li>
+                                 <li><a href="pricing-table.html">Цени </a></li>
+                                 <li><a href="faq.html">ЧЗВ</a></li>
+                                 <li><a href="gallery.html">Галерия</a></li>
+                              </ul>
+                           </li>
+                           <li class="nav-item dropdown"><a class="nav-link" href="#" data-toggle="dropdown">Влакове<i class="fa fa-angle-down"></i></a>
+                              <ul class="dropdown-menu" role="menu">
+                                 <li><a href="project-all.html">Всички влакове</a></li>
+
+                              </ul>
+                           </li>
+                           <li class="nav-item dropdown active"><a class="nav-link" href="#" data-toggle="dropdown">Услуги<i class="fa fa-angle-down"></i></a>
+                              <ul class="dropdown-menu" role="menu">
+                                 <li><a href="service.html">Разписание на влакове</a></li>
+                                 <li><a href="service-single.html">Маршрути и дестинации</a></li>
+                              </ul>
+                           </li>
+                           <li class="nav-item dropdown">
+                           <a class="nav-link" href="#" data-toggle="dropdown">
+                              Новини
+                              <i class="fa fa-angle-down"></i>
+                           </a>
+                              <ul class="dropdown-menu" role="menu">
+                                 
+                                
+                                 <li><a href="news-single.html">Новини</a></li>
+                              </ul>
+                           </li>
+                           <li class="nav-item dropdown">
+                                 <a href="contact.html">Контакти </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <a href="" class="top-right-btn btn btn-primary">Заяви оферта</a>
+                  </nav>
+
+                  
+                  
+               </div>
+            </div>
+         </header>
+      </div>
+
+      <div class="banner-area" id="banner-area" style="background-image:url(images/banner/banner3.jpg);">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col">
+                  <div class="banner-heading">
+                     <h1 class="banner-title">Маршрути и дестинации</h1>
+                     <ol class="breadcrumb">
+                        <li><a href="index.html">Начало</a></li>
+                        <li><a href="#">Маршрути</a></li>
+                     </ol>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <section class="custom-map-container">
+         <h1 class="custom-map-title">Маршрути и Дестинации</h1>
+     
+         <div class="map-controls">
+             <input type="text" id="search" class="map-input" placeholder="Търсене по име на дестинация...">
+             <select id="filter" class="map-select">
+                 <option value="all">Всички</option>
+                 <option value="wifi">Wi-Fi</option>
+                 <option value="restaurant">Ресторант</option>
+                 <option value="air-conditioning">Климатик</option>
+             </select>
+             <button class="map-btn" onclick="filterDestinations()">Филтрирай</button>
+         </div>
+     
+         <div id="train-map"></div>
+     
+         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+         <script>
+             const map = L.map('train-map').setView([42.6977, 23.3219], 7);
+     
+             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                 maxZoom: 18,
+                 attribution: '© TRAIN GO'
+             }).addTo(map);
+     
+             const destinations = [
+             { name: "София", lat: 42.6977, lng: 23.3219, services: ["wifi", "restaurant"] },
+            { name: "София Север", lat: 42.7073, lng: 23.3237, services: ["wifi"] },
+            { name: "Пловдив", lat: 42.1354, lng: 24.7453, services: ["restaurant", "air-conditioning"] },
+            { name: "Бургас", lat: 42.5048, lng: 27.4626, services: ["wifi", "air-conditioning"] },
+            { name: "Русе", lat: 43.8356, lng: 25.9657, services: ["restaurant", "wifi"] },
+            { name: "Варна", lat: 43.2141, lng: 27.9147, services: ["wifi"] },
+            { name: "Стара Загора", lat: 42.4237, lng: 25.6241, services: ["restaurant"] },
+            { name: "Благоевград", lat: 42.0209, lng: 23.0947, services: ["wifi"] },
+            { name: "Плевен", lat: 43.4112, lng: 24.6067, services: ["restaurant", "air-conditioning"] },
+            { name: "Шумен", lat: 43.2712, lng: 26.9361, services: ["wifi"] },
+            { name: "Велико Търново", lat: 43.0757, lng: 25.6172, services: ["wifi"] },
+            { name: "Добрич", lat: 43.5664, lng: 27.8273, services: ["wifi", "restaurant"] },
+            { name: "Враца", lat: 43.2105, lng: 23.5485, services: ["air-conditioning"] },
+            { name: "Сливен", lat: 42.6819, lng: 26.3221, services: ["restaurant"] },
+            { name: "Ямбол", lat: 42.4848, lng: 26.5038, services: ["wifi"] },
+            { name: "Пазарджик", lat: 42.1928, lng: 24.3335, services: ["restaurant", "air-conditioning"] },
+            { name: "Хасково", lat: 41.9344, lng: 25.5556, services: ["wifi", "restaurant"] },
+            { name: "Горна Оряховица", lat: 43.1258, lng: 25.6927, services: ["wifi"] },
+            { name: "Свиленград", lat: 41.7671, lng: 26.2081, services: ["restaurant"] },
+            { name: "Димитровград", lat: 42.0585, lng: 25.5877, services: ["wifi"] },
+            { name: "Севлиево", lat: 43.0231, lng: 25.0917, services: ["wifi"] },
+            { name: "Ловеч", lat: 43.1371, lng: 24.7194, services: ["restaurant"] },
+            { name: "Троян", lat: 42.8898, lng: 24.7157, services: ["wifi"] },
+            { name: "Кюстендил", lat: 42.2833, lng: 22.6911, services: ["wifi"] },
+            { name: "Перник", lat: 42.6054, lng: 23.0307, services: ["air-conditioning"] },
+            { name: "Мездра", lat: 43.1438, lng: 23.7136, services: ["wifi"] },
+            { name: "Лом", lat: 43.828, lng: 23.2344, services: ["restaurant"] },
+            { name: "Свищов", lat: 43.6248, lng: 25.3565, services: ["wifi"] },
+            { name: "Несебър", lat: 42.6602, lng: 27.7155, services: ["air-conditioning"] },
+            { name: "Поморие", lat: 42.5561, lng: 27.6415, services: ["wifi"] },
+            { name: "Казанлък", lat: 42.6271, lng: 25.4028, services: ["restaurant"] },
+            { name: "Каварна", lat: 43.4353, lng: 28.3394, services: ["wifi"] },
+            { name: "Карнобат", lat: 42.6494, lng: 26.9838, services: ["restaurant"] },
+            { name: "Исперих", lat: 43.7174, lng: 26.8333, services: ["wifi"] },
+            { name: "Самоков", lat: 42.3373, lng: 23.5529, services: ["restaurant"] },
+            { name: "Дупница", lat: 42.2612, lng: 23.1167, services: ["wifi"] },
+            { name: "Червен бряг", lat: 43.2684, lng: 24.0957, services: ["wifi"] },
+            { name: "Костенец", lat: 42.3103, lng: 23.8324, services: ["restaurant"] },
+            { name: "Петрич", lat: 41.3973, lng: 23.2079, services: ["wifi"] },
+            { name: "Банско", lat: 41.8389, lng: 23.4888, services: ["restaurant"] },
+            { name: "Разлог", lat: 41.8862, lng: 23.4676, services: ["wifi"] },
+            { name: "Гоце Делчев", lat: 41.577, lng: 23.729, services: ["air-conditioning"] },
+            { name: "Търговище", lat: 43.2587, lng: 26.5826, services: ["restaurant"] },
+            { name: "Ябланица", lat: 43.0465, lng: 24.1054, services: ["wifi"] },
+            { name: "Белоградчик", lat: 43.6271, lng: 22.6792, services: ["wifi"] },
+            { name: "Копривщица", lat: 42.6424, lng: 24.3574, services: ["restaurant"] },
+            { name: "Тетевен", lat: 42.9175, lng: 24.2662, services: ["wifi"] },
+            { name: "Асеновград", lat: 42.0165, lng: 24.8771, services: ["restaurant"] },
+            { name: "Пещера", lat: 42.0406, lng: 24.2995, services: ["wifi"] },
+            { name: "Елена", lat: 42.9274, lng: 25.8781, services: ["air-conditioning"] },
+            { name: "Златоград", lat: 41.3787, lng: 25.1017, services: ["wifi"] },
+            { name: "Габрово", lat: 42.8747, lng: 25.3171, services: ["restaurant"] }
+        ];
+     
+             let markers = [];
+     
+             function addMarkers(filteredDestinations) {
+                 markers.forEach(marker => map.removeLayer(marker));
+                 markers = [];
+     
+                 filteredDestinations.forEach(destination => {
+                     const marker = L.marker([destination.lat, destination.lng]).addTo(map)
+                         .bindPopup(`
+                             <div class="info-popup">
+                                 <h3>${destination.name}</h3>
+                                 <p><strong>Услуги:</strong> ${destination.services.join(", ")}</p>
+                             </div>
+                         `);
+                     markers.push(marker);
+                 });
+             }
+     
+             addMarkers(destinations);
+     
+             function filterDestinations() {
+                 const filterValue = document.getElementById("filter").value;
+                 const searchValue = document.getElementById("search").value.toLowerCase();
+     
+                 const filteredDestinations = destinations.filter(destination => {
+                     const matchesFilter = filterValue === "all" || destination.services.includes(filterValue);
+                     const matchesSearch = destination.name.toLowerCase().includes(searchValue);
+                     return matchesFilter && matchesSearch;
+                 });
+     
+                 addMarkers(filteredDestinations);
+             }
+     
+             document.getElementById("search").addEventListener("input", filterDestinations);
+         </script>
+     </section>
+
+      <section class="clients-area " id="clients-area">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12 owl-carousel owl-theme text-center partners" id="partners-carousel">
+                  <figure class="item partner-logo">
+                     <a href="#">
+                        <img class="img-fluid" src="images/clients/client1.png" alt="">
+                     </a>
+                  </figure>
+                  <figure class="item partner-logo">
+                     <a href="#">
+                        <img class="img-fluid" src="images/clients/client2.png" alt="">
+                     </a>
+                  </figure>
+                  <figure class="item partner-logo">
+                     <a href="#">
+                        <img class="img-fluid" src="images/clients/client1.png" alt="">
+                     </a>
+                  </figure>
+                  <figure class="item partner-logo">
+                     <a href="#">
+                        <img class="img-fluid" src="images/clients/client2.png" alt="">
+                     </a>
+                  </figure>                  <figure class="item partner-logo">
+                     <a href="#">
+                        <img class="img-fluid" src="images/clients/client1.png" alt="">
+                     </a>
+                  </figure>
+                  <figure class="item partner-logo">
+                     <a href="#">
+                        <img class="img-fluid" src="images/clients/client2.png" alt="">
+                     </a>
+                  </figure>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section id="call-to-action" class="call-to-action-bg">
+         <div class="container">
+           <div class="row">
+             <div class="col-lg-8 align-self-center">
+               <h3 class="call-to-action-title">Решения за пътувания и транспорт в страната</h3>
+               <p>
+                 Бихме искали да чуем от вас, споделете ни вашите нужди за пътуване или транспорт
+               </p>
+             </div>
+             <div class="col-lg-4 text-right">
+               <a class="btn btn-box" href="contact.html">Свържете се с нас <br/>Или позвънете на +359 XXX XXX XXX</a>
+             </div>
+           </div>
+         </div>
+       </section>
+       
+
+       <footer class="footer" id="footer">
+         <div class="footer-main bg-overlay">
+           <div class="container">
+             <div class="row">
+               <div class="col-lg-4 col-md-12 footer-widget footer-about">
+                 <div class="footer-logo">
+                   <img src="images/logo.png" alt="Лого"width="250" height="150">
+                 </div>
+                 <p>Train Go е водещ доставчик на железопътни услуги в България, осигуряващ надеждни пътувания и товарни услуги. Нашата цел е да свързваме хора и места, предлагайки удобство и сигурност.</p>
+                 <h3 class="widget-title">Абонирайте се за новини!</h3>
+                 <form class="newsletter-form" id="newsletter-form" action="#" method="post">
+                   <div class="form-group">
+                     <input class="form-control form-control-lg" id="newsletter-form-email" type="email" name="email" placeholder="Имейл" autocomplete="off">
+                     <button class="btn btn-primary"><i class="fa fa-paper-plane"></i></button>
+                   </div>
+                 </form>
+               </div>
+               <div class="col-lg-4 col-md-6 footer-widget">
+                 <h3 class="widget-title">Бързи връзки</h3>
+                 <ul class="list-dash">
+                   <li><a href="about.html">За нас</a></li>
+                   <li><a href="service.html">Дестинации</a></li>
+                   <li><a href="project-all.html">Всички влакове</a></li>
+                   <li><a href="team.html">Нашият екип</a></li>
+                   <li><a href="faq.html">ЧЗВ</a></li>
+                   <li><a href="news-left-sidebar.html">Новини</a></li>
+                   <li><a href="pricing-table.html">Цени</a></li>
+                   <li><a href="contact.html">Свържете се с нас</a></li>
+                 </ul>
+               </div>
+               <div class="col-lg-4 col-md-6 footer-widget">
+                 <h3 class="widget-title">Контакти</h3>
+                 <div class="ts-contact-info">
+                   <span class="ts-contact-icon float-left"><i class="icon icon-map-marker2"></i></span>
+                   <div class="ts-contact-content">
+                     <h3 class="ts-contact-title">Адрес</h3>
+                     <p>ул. Железопътна 123, София, България</p>
+                   </div>
+                 </div>
+                 <div class="ts-contact-info last">
+                   <span class="ts-contact-icon float-left"><i class="icon icon-envelope"></i></span>
+                   <div class="ts-contact-content">
+                     <h3 class="ts-contact-title">Имейл адрес</h3>
+                     <p>support@traingo.bg</p>
+                   </div>
+                 </div>
+                 <div class="ts-contact-info">
+                   <span class="ts-contact-icon float-left"><i class="icon icon-phone3"></i></span>
+                   <div class="ts-contact-content">
+                     <h3 class="ts-contact-title">Телефон</h3>
+                     <p>+359 XXX XXX XXX</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="copyright">
+           <div class="container">
+             <div class="row">
+               <div class="col-lg-6 col-md-12">
+                 <div class="copyright-info">
+                   <span>Copyright © 2024 TrainGo. Всички права запазени.</span>
+                 </div>
+               </div>
+               <div class="col-lg-6 col-md-12">
+                 <div class="footer-social text-right">
+                   <ul>
+                     <li><a href="https://discord.com/channels/1167165862847987712/1278510274948763769"><i class="fab fa-discord"></i></a></li>
+                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+                   </ul>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </footer>
+
+      <div class="back-to-top affix" id="back-to-top" data-spy="affix" data-offset-top="10">
+         <button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i>
+         </button>
+      </div>
+
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+      <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+      <script type="text/javascript" src="js/waypoints.min.js"></script>
+      <script type="text/javascript" src="js/jquery.colorbox.js"></script>
+      <script type="text/javascript" src="js/custom.js"></script>
+   </div>
+</body>
+
+</html>
